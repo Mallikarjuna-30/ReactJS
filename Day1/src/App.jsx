@@ -1,10 +1,9 @@
 import React from 'react'
-
+import './App.css'
 const App = () => {
   return (
     <>
       <div>
-        <h1>APP</h1>
         <h3>Hello World</h3>
       </div>
       <div className="newdiv">
