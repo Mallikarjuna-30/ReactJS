@@ -8,9 +8,16 @@ const App = () => {
 
   const getData = async () => {
     console.log('Data came....');
-    const response = await axios.get(`https://picsum.photos/v2/list?page=${page}&limit=30`)
-    const info = response.data
-    setUserData(info)
+
+    try {
+      const response = await axios.get(`https://picsum.photos/v2/list?page=${page}&limit=30`)
+      const info = response.data
+      setUserData(info)
+    }
+    catch (error) {
+      console.log(error);
+    }
+
   }
 
   useEffect(() => {
