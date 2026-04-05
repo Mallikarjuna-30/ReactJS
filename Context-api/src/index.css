@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  background-color: lightblue;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.nav2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: small;
+}
+
+.nav2 button {
+  padding: 4px 2px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
